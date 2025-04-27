@@ -1,0 +1,104 @@
+/* Container for the entire page */
+.user-type-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #8e44ad, #3498db); /* Gradient background */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Wrapper for content (title and subtitle) */
+.content-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+  /* display: flex; */
+}
+
+/* Flex container for user options */
+.button-container {
+  display: flex; /* Align items side by side */
+  justify-content: center; /* Center items horizontally */
+  gap: 40px; /* Space between the two options */
+}
+
+/* Individual user option */
+.user-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for user option */
+.user-option:hover {
+  transform: scale(1.05);
+}
+
+/* User image placeholder */
+.user-image {
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Buttons for Farmer and Customer */
+.user-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.farmer-button {
+  background-color: #27ae60; /* Green for Farmer */
+}
+
+.farmer-button:hover {
+  background-color: #2ecc71;
+}
+
+.customer-button {
+  background-color: #e74c3c; /* Red for Customer */
+}
+
+.customer-button:hover {
+  background-color: #c0392b;
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures the image stays within the circle */
+  margin-bottom: 15px;
+}
+
+.icon-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fits well */
+}
